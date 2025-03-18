@@ -3,3 +3,98 @@ title: Events and travel log
 layout: index
 filename: Events
 --- 
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Events and travel log</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Urbanist", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://juliebannwart.github.io/website/Background.jpg");
+  min-height: 25%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="https://juliebannwart.github.io/website/" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="https://juliebannwart.github.io/website/Research" class="w3-button w3-block w3-black">RESEARCH</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="https://juliebannwart.github.io/website/Events" class="w3-button w3-block w3-black">EVENTS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="https://juliebannwart.github.io/website/CV.pdf" class="w3-button w3-block w3-black">CV</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:3rem">Events and travel log</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-content" style="max-width:1200px">
+
+  <div class="w3-row-padding">
+  <div class="w3-half">
+    <h3 style="color:#0DCAC4"> We might have met during one of the following events: </h3>
+    <li><a href="https://archiveweb.epfl.ch/ytm2023.epfl.ch/">Young Topologists Meeting (YTM), July 2023</a>, in EPFL, Lausanne, Switzerland.</li>
+    <li><a href="https://sites.google.com/view/european-talbot/previous-iterations/2024-workshop">European Talbot, July 2024</a> &laquo;&nbsp;Operads in deformation theory and homotopical algebra&nbsp;&raquo;, Schleiden, Germany.</li>
+    <li><a href="https://www.heidelberg-laureate-forum.org/forum/11th-hlf-2024/">11th Heidelberg Laureate Forum, September 2024</a>, Heidelberg, Germany.</li>
+    <li><a href="https://math.ethz.ch/fim/activities/conferences/Algebraic-geometry-a-motivic-view.html">Conference &laquo;&nbsp;Algebraic geometry: a motivic view&nbsp;&raquo; in honor of Marc Levine, January 2025</a>, in ETHZ, Zürich, Switzerland.</li>
+  </div>
+
+  <div class="w3-half">
+    <h3 style="color:#41CA0D"> In the future, I will participate in the following events: </h3>
+    <li><a href="https://www.mathematik.tu-darmstadt.de/algebra/forschung_algebra/konferenzen_und_workshops_ag_algebra/konferenz_2025_.en.jsp">Conference &laquo;&nbsp;Motives and Arithmetic Geometry&nbsp;&raquo;, July 2025</a>, in TU Darmstadt, Germany.</li>
+  </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
